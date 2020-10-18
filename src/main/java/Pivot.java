@@ -17,6 +17,7 @@ public class Pivot {
         }
 
         for(int i=0; i<nums.length; i++) {
+            //System.out.println(left_sum);
             if(total_sum - left_sum - nums[i] == left_sum)
                 return i;
             left_sum += nums[i];
@@ -27,7 +28,7 @@ public class Pivot {
 
     public static void main(String ar[]) {
 
-        int arr[] = {1,2,3};
+        int arr[] = {1,7,3,6,5,6};
         System.out.println(pivotIndex(arr));
 
     }
